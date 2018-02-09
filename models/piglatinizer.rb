@@ -7,7 +7,6 @@ class PigLatinizer
 
   def piglatinize(word)
     vowel = word[0].downcase.scan(/[aeoui]/).count
-    consonant = word[0..1].downcase.scan(/[bcdfghjklmnpqrstvwxyz]/).count
 
     if vowel == 1
       word = "#{word}way"
